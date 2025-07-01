@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YogShop - Online Shopping</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <h6>YogShop</h6>
+        </div>
+        <div class="nav-search">
+            <input type="text" placeholder="Search products..." />
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="nav-items">
+            <a href="#"><i class="fas fa-user"></i> Account</a>
+            <a href="#"><i class="fas fa-undo"></i> Returns</a>
+            <a href="#" id="cart-link">
+                <i class="fas fa-shopping-cart"></i> Cart <span id="cart-count">0</span>
+            </a>
+        </div>
+    </nav>
+    <div class="category-bar">
+        <a href="#">All</a>
+        <a href="#">Electronics</a>
+        <a href="#">Fashion</a>
+        <a href="#">Books</a>
+        <a href="#">Home</a>
+        <a href="#">Deals</a>
+        <a href="#">Gifts</a>
+    </div>
+    <div class="hero-banner"></div>
+    <div class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="electronics.jpg" alt="Electronics" />
+                <p>Electronics</p>
+            </div>
+            <div class="category-card">
+                <img src="clothing.jpg" alt="Clothing" />
+                <p>Clothing</p>
+            </div>
+            <div class="category-card">
+                <img src="books1.jpg" alt="Books" />
+                <p>Books</p>
+            </div>
+            <div class="category-card">
+                <img src="home.jpg" alt="Home" />
+                <p>Home & Kitchen</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid" id="product-grid"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Get to Know Us</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press Releases</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Make Money with Us</h3>
+                <ul>
+                    <li><a href="#">Sell products</a></li>
+                    <li><a href="#">Become an Affiliate</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Let Us Help You</h3>
+                <ul>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Shipping Rates</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 YogShop. All rights reserved.</p>
+        </div>
+    </footer>
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Shopping Cart</h2>
+            <div class="cart-items" id="cart-items">
+            </div>
+            <div class="cart-total">
+                <p>Total: <span id="cart-total">0.00</span></p>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
